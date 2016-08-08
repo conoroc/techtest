@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <title>Beijing 2008</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <table class="table table-bordered table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Gold Medals</th>
+                        <th>Silver Medals</th>
+                        <th>Bronze Medals</th>
+                        <th>Total Medals</th>
+                    </tr>
+                </thead>
+                <tbody id="league">
+                </tbody>
+            </table>
+        </div>
+
+        <script id="itemTemplate" type="text/template">
+
+            <td class="country">
+                <%= item.country %>
+            </td>
+            <td class="gold_count">
+                <%= item.gold_count %>
+            </td>
+            <td class="silver_count">
+                <%= item.silver_count %>
+            </td>
+            <td class="bronze_count">
+                <%= item.bronze_count %>
+            </td>
+            <td class="medal_count">
+                <%= item.medal_count %>
+            </td>
+
+
+        </script>
+
+        <script src="jquery-3.1.0.min.js"></script>
+        <script src="underscore-min.js"></script>
+        <script src="backbone-min.js"></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>
